@@ -1,13 +1,30 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+    font-family: 'Helvetica Neue LT Std Bold';
+    src: url('./Components/Assets/font/HelveticaNeueLTStd-Bd.otf');
+    src:local('Helvetica Neue LT Std Bold'), 
+    url('./Components/Assets/font/HelveticaNeueLTStd-Bd.otf') format('embedded-opentype'),
+    url('./Components/Assets/font/HelveticaNeueLTStd-Bd.otf') format('otf'),
+    
+}
+@font-face {
+    font-family: 'Helvetica Neue LT Std Black';
+    src: url('./Components/Assets/font/HelveticaNeueLTStd-Blk.otf');
+    src:local('Helvetica Neue LT Std Black'), 
+    url('./Components/Assets/font/HelveticaNeueLTStd-Blk.otf') format('embedded-opentype'),
+    url('./Components/Assets/font/HelveticaNeueLTStd-Blk.otf') format('otf'),
+    
+}
+@font-face {
+    font-family: 'Helvetica Neue LT Std lite';
+    src: url('./Components/Assets/font/HelveticaNeueLTStd-Lt.otf');
+    src:local('Helvetica Neue LT Std lite'), 
+    url('./Components/Assets/font/HelveticaNeueLTStd-Lt.otf') format('embedded-opentype'),
+    url('./Components/Assets/font/HelveticaNeueLTStd-Lt.otf') format('otf'),
+    
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+body{
+    font-family: 'Helvetica Neue LT Std lite';
+    margin: 0
 }

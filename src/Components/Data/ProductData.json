@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Andrea sub 1",
+    "img": "/img/andrea-sun-1.jpg",
+    "icon": "<StarBorderIcon />",
+    "price": 100,
+    "color": "black",
+    "size": 2,
+    "featured": 2
+  },
+  {
+    "title": "Andrea sub 2",
+    "img": "/img/andrea-sun-2.jpg",
+    "icon": "<StarBorderIcon />",
+    "price": 100,
+    "color": "black",
+    "size": 2,
+    "featured": 2
+  },
+  {
+    "title": "Andrea sub 3",
+    "img": "/img/andrea-sun-3.jpg",
+    "icon": "<StarBorderIcon />",
+    "price": 100,
+    "color": "black",
+    "sizes": 2,
+    "featured": 2
+  },
+  {
+    "title": "Andrea sub 3",
+    "img": "/img/andrea-sun-3.jpg",
+    "icon": "<StarBorderIcon />",
+    "price": 100,
+    "color": "black",
+    "sizes": 2,
+    "featured": 2
+  }
+]
