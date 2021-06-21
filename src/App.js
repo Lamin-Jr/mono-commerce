@@ -17,7 +17,7 @@ const BagLocalStorage = JSON.parse(localStorage.getItem('bag')) || '[]';
 
 export default function App() {
   const [AddToBag, setAddToBag] = useState(BagLocalStorage);
-  const [BagTotal, setBagTotal] = useState(0);
+  const [BagTotal, setBagTotal] = useState([]);
 
   useEffect(() => {
     //Local Storage
@@ -44,6 +44,7 @@ export default function App() {
   };
 
   return (
+    <div>
     <Router>
       <Navigation BagItem={AddToBag.length} />
       <div>
@@ -62,6 +63,7 @@ export default function App() {
         </Switch>
       </div>
       <Footers />
-    </Router>
+    </Router></div>
+    
   );
 }
