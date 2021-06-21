@@ -18,6 +18,16 @@ const ProductCartStyle = makeStyles(theme => ({
       height: '100% !important',
       padding: 0,
     },
+    [theme.breakpoints.down('md')]: {
+      width: '98%',
+    height: '626px',
+    '& li': {
+      width: '50% !important',
+      height: '39vh !important',
+      padding: 0,
+    },
+       
+    },
   },
   titleBar: {
     backgroundColor: 'transparent',

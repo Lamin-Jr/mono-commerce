@@ -6,6 +6,9 @@ const NavigationStyle = makeStyles(theme => ({
     top: 0,
     paddingTop: '0',
     boxShadow: 'none',
+    [theme.breakpoints.down('md')]: {
+      paddingTop: '10px',
+    },
     backgroundColor: '#fafafa00',
     '& a': {
       color: 'white',
@@ -17,6 +20,9 @@ const NavigationStyle = makeStyles(theme => ({
     paddingTop: '0',
     boxShadow: 'none',
     backgroundColor: '#fafafa00',
+    [theme.breakpoints.down('md')]: {
+      paddingTop: '10px',
+    },
     '& a': {
       color: 'black !important',
     },
@@ -25,6 +31,27 @@ const NavigationStyle = makeStyles(theme => ({
   Gridroot: {
     alignItems: 'center',
     color: 'white !important',
+    [theme.breakpoints.down('md')]: {
+      display: 'flex',
+      flexWrap: 'wrap',
+      width: 'auto',
+      "& div": {
+        "flex-basis": 'auto',
+        display: 'flex',
+        
+      }
+    },
+    [theme.breakpoints.down('sm')]: {
+      display: 'flex',
+      flexDirection: 'column',
+      "& div": {
+        "flex-basis": 'auto',
+        display: 'flex',
+        width: 'none !important',
+      }
+      
+      
+    },
   },
   //Left Div container
   CollectionContainer: {

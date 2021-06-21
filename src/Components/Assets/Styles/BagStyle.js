@@ -8,6 +8,9 @@ const BagStyle = makeStyles(theme => ({
     flexWrap: 'wrap',
     flexDirection: 'row',
     justifyContent: 'center',
+    [theme.breakpoints.down('md')]: {
+      padding: '32vh 0 0 0',
+    },
   },
   BagCardDiv: {
     display: 'flex',
@@ -51,6 +54,10 @@ const BagStyle = makeStyles(theme => ({
     boxShadow: 'none',
     borderColor: 'black',
     fontSize: '20px',
+    [theme.breakpoints.down('md')]: {
+      width: '100%',
+      fontSize: '15px',
+    },
   },
   Total: {
     fontSize: '20px',

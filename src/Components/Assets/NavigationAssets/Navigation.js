@@ -22,7 +22,7 @@ const Navigation = props => {
         position="static"
         className={pathname !== '/' ? classes.rootForBag : classes.rootForHome}
       >
-        <Toolbar>
+        
           <Grid container spacing={1} className={classes.Gridroot}>
             <Grid item xs>
               <Typography className={classes.CollectionContainer}>
@@ -62,7 +62,7 @@ const Navigation = props => {
               </Typography>
             </Grid>
           </Grid>
-        </Toolbar>
+        
       </AppBar>
     </div>
   );

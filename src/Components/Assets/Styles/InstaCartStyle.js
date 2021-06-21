@@ -9,6 +9,9 @@ const InstaCartStyle = makeStyles(theme => ({
     backgroundColor: theme.palette.background.paper,
     margin: '100px',
     height: '90vh',
+    [theme.breakpoints.down('md')]: {
+      height: 'auto',
+    },
   },
   gridList: {
     width: '50%',
@@ -21,12 +24,25 @@ const InstaCartStyle = makeStyles(theme => ({
       margin: '0',
       padding: '0 !important',
     },
+    [theme.breakpoints.down('md')]: {
+      width: '80%',
+      height: 'auto',
+      '& li': {
+      width: '50% !important',
+      height: '90vh !important',
+      margin: '0',
+      padding: '0 !important',
+    },
+    },
   },
   firstImg: {
     display: 'flex',
     width: '50%',
     height: '90vh',
     backgroundSize: 'cover',
+    [theme.breakpoints.down('md')]: {
+      width: '80%',
+    },
   },
   titleDiv: {
     display: 'flex',
