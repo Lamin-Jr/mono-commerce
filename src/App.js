@@ -13,25 +13,23 @@ import Bag from './Components/Pages/Bag';
 import ProductAPI from './Components/Data/ProductData.json';
 
 //Bag Local storage: to store the product added to the Bag
-const BagLocalStorage = JSON.parse(localStorage.getItem('bag')) || '[]';
+const BagLocalStorage = JSON.parse(localStorage.getItem('bag')) || "[]";
 
 export default function App() {
   const [AddToBag, setAddToBag] = useState(BagLocalStorage);
-  const [BagTotal, setBagTotal] = useState([]);
 
+  
+// console.log(BagLocalStorage)
   useEffect(() => {
     //Local Storage
     localStorage.setItem('bag', JSON.stringify(AddToBag));
 
     //Bag Total State
-    setBagTotal(() => {
-      if (AddToBag.length !== 0) {
-        return AddToBag.map(a => a.price).reduce((a, b) => a + b);
-      } else {
-        return 0;
-      }
-    });
-  }, [AddToBag, BagTotal]);
+
+  }, [AddToBag]);
+
+  
+  
 
   //Add TO BAG FUNCTION
   const AddToBagFunction = product => {
@@ -57,7 +55,7 @@ export default function App() {
               AddToBagData={AddToBag}
               onRemoveFromBag={removeFromBag}
               BagLenght={AddToBag.length}
-              Total={BagTotal}
+              Total={AddToBag}
             />
           </Route>
         </Switch>

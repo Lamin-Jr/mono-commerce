@@ -11,7 +11,7 @@ const InstagramCart = () => {
   return (
     <div className={classes.root}>
       <Typography className={classes.titleDiv}>
-        <span>SHOP INSTAGRAM </span> <div>SHOP ></div>
+        <span>SHOP INSTAGRAM </span> <span>SHOP ></span>
       </Typography>
       <div
         className={classes.firstImg}
