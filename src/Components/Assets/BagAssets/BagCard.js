@@ -10,10 +10,10 @@ import CloseIcon from '@material-ui/icons/Close';
 import BagCardStyles from '../Styles/BagCardStyle';
 
 const BagCard = props => {
-  const [BagData, setBData] = useState([]);
+  const [BagData,setBData ]= useState(props.AddToBagData);
   const classes = BagCardStyles();
   useEffect(() => {
-    setBData(() => props.AddToBagData);
+    setBData(props.AddToBagData);
   }, [props.AddToBagData]);
 
   return (

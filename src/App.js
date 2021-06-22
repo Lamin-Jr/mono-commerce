@@ -13,18 +13,14 @@ import Bag from './Components/Pages/Bag';
 import ProductAPI from './Components/Data/ProductData.json';
 
 //Bag Local storage: to store the product added to the Bag
-const BagLocalStorage = JSON.parse(localStorage.getItem('bag')) || "[]";
+const BagLocalStorage = JSON.parse(localStorage.getItem([""])) || [];
 
 export default function App() {
-  const [AddToBag, setAddToBag] = useState(BagLocalStorage);
+  const [AddToBag, setAddToBag] = useState(BagLocalStorage.map(a=> a) !== []? BagLocalStorage : []);
 
-  
-// console.log(BagLocalStorage)
   useEffect(() => {
     //Local Storage
-    localStorage.setItem('bag', JSON.stringify(AddToBag));
-
-    //Bag Total State
+    localStorage.setItem('', JSON.stringify(AddToBag));
 
   }, [AddToBag]);
 

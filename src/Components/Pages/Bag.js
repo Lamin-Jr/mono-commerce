@@ -12,8 +12,9 @@ const Bag = props => {
 
   useEffect(() => {
     //Total count fUNCTION, count to count the price of total Items added to the bag 
-    setBatTotal(total.map(a => a.price).reduce((a, b) => a + b, 0))
+    setBatTotal(Object.values(total).map(a => a.price).reduce((a, b) => a + b, 0))
   },[total])
+  console.log(BagTotal);
 
   
 
