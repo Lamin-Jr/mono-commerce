@@ -8,6 +8,9 @@ const ProductCartStyle = makeStyles(theme => ({
     overflow: 'hidden',
     backgroundColor: theme.palette.background.paper,
     padding: '70px 80px',
+    [theme.breakpoints.down('md')]: {
+      padding: '20px 30px',
+    }
   },
   gridList: {
     width: '98%',
@@ -20,10 +23,11 @@ const ProductCartStyle = makeStyles(theme => ({
     },
     [theme.breakpoints.down('md')]: {
       width: '98%',
-    height: '626px',
+    height: 'auto',
     '& li': {
-      width: '50% !important',
-      height: '39vh !important',
+      width: '49% !important',
+      height: '70vh !important',
+      margin: 2,
       padding: 0,
     },
        

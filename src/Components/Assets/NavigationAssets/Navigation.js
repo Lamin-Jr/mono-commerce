@@ -22,9 +22,8 @@ const Navigation = props => {
         position="static"
         className={pathname !== '/' ? classes.rootForBag : classes.rootForHome}
       >
-        
           <Grid container spacing={1} className={classes.Gridroot}>
-            <Grid item xs>
+            
               <Typography className={classes.CollectionContainer}>
                 <Link to="/" className={classes.CollectionItems}>
                   NEW ARRIVALS
@@ -36,15 +35,14 @@ const Navigation = props => {
                   COLLECTING
                 </Link>
               </Typography>
-            </Grid>
-            <Grid item xs>
+            
+           
               <Typography variant="h6" className={classes.LogoDiv}>
                 <Link to="/" className={classes.LogoText}>
                   MODNIKKY
                 </Link>
               </Typography>
-            </Grid>
-            <Grid item xs>
+            
               <Typography className={classes.functionalLinksContainers}>
                 <Link to="/" className={classes.functionalLinksItems}>
                   <SearchIcon />
@@ -60,7 +58,7 @@ const Navigation = props => {
                   <FavoriteBorderIcon />
                 </Link>
               </Typography>
-            </Grid>
+            
           </Grid>
         
       </AppBar>

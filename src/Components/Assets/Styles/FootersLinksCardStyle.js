@@ -13,6 +13,11 @@ const FootersLinksCardStyle = makeStyles(theme => ({
     '& .MuiListItem-button': {
       height: '25px',
     },
+    [theme.breakpoints.down('md')]: {
+      width: '100%',
+      display: 'flex',
+      flexWrap: 'wrap'
+    },
   },
   nested: {
     paddingLeft: theme.spacing(4),
@@ -22,6 +27,9 @@ const FootersLinksCardStyle = makeStyles(theme => ({
     fontWeight: 'bold',
     color: 'black',
     fontFamily: 'Helvetica Neue LT Std lite !important ',
+    [theme.breakpoints.down('md')]: {
+      fontWeight: '200',
+    },
   },
   LinkIcon: {
     minWidth: 'auto',

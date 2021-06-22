@@ -8,6 +8,11 @@ const FootersStyles = makeStyles(theme => ({
     // width: '90%',
     // margin: '100px',
     backgroundColor: theme.palette.background.paper,
+    [theme.breakpoints.down('md')]: {
+      
+      flexWrap: 'wrap'
+      
+    },
   },
   nested: {
     paddingLeft: theme.spacing(4),
@@ -23,6 +28,11 @@ const FootersStyles = makeStyles(theme => ({
     width: '100%',
     margin: '0 100px',
     justifyContent: 'center',
+    [theme.breakpoints.down('md')]: {
+     display: 'flex',
+     flexWrap: 'wrap',
+     width: '50%',
+    },
   },
 }));
 
