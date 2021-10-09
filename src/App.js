@@ -8,6 +8,7 @@ import Footers from './Components/Assets/FooterAssets/Footers';
 //Pages Imports
 import Home from './Components/Pages/Home';
 import Bag from './Components/Pages/Bag';
+import Shop from './Components/Pages/Shop.js'
 
 //Product Data Import
 import ProductAPI from './Components/Data/ProductData.json';
@@ -53,6 +54,9 @@ export default function App() {
               BagLenght={AddToBag.length}
               Total={AddToBag}
             />
+          </Route>
+          <Route> 
+          <Shop />
           </Route>
         </Switch>
       </div>

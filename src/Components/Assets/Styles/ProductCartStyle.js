@@ -13,7 +13,7 @@ const ProductCartStyle = makeStyles(theme => ({
     }
   },
   gridList: {
-    width: '98%',
+    width: '100%',
     height: '626px',
     transform: 'translateZ(0)',
     '& li': {
@@ -32,6 +32,9 @@ const ProductCartStyle = makeStyles(theme => ({
     },
        
     },
+  },
+  sigleProductDis: {
+    height: '100%',
   },
   titleBar: {
     backgroundColor: 'transparent',
@@ -82,6 +85,8 @@ const ProductCartStyle = makeStyles(theme => ({
     justifyContent: 'flex-start',
     marginBottom: '20px',
   },
-}));
+}
+)
+)
 
 export default ProductCartStyle;

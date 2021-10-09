@@ -28,10 +28,10 @@ const Navigation = props => {
                 <Link to="/" className={classes.CollectionItems}>
                   NEW ARRIVALS
                 </Link>
-                <Link to="/" className={classes.CollectionItems}>
+                <Link to="/shop" className={classes.CollectionItems}>
                   SHOP
                 </Link>
-                <Link to="/" className={classes.CollectionItems}>
+                <Link to="/shop" className={classes.CollectionItems}>
                   COLLECTING
                 </Link>
               </Typography>
