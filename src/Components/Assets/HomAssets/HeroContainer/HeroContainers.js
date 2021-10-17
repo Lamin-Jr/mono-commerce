@@ -1,4 +1,5 @@
-const HeroContainer = props => {
+import React from "react";
+const HeroContainer = (props) => {
   return (
     <div
       className={props.HeroType}

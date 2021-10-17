@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
-import { GridList, Typography, GridListTile } from '@material-ui/core/';
-import LocalMallIcon from '@material-ui/icons/LocalMall';
-import ProductCartStyle from '../Styles/ProductCartStyle';
-import { useLocation, Link } from 'react-router-dom';
+import React, { useState } from "react";
+import { GridList, Typography, GridListTile } from "@material-ui/core/";
+import LocalMallIcon from "@material-ui/icons/LocalMall";
+import ProductCartStyle from "../Styles/ProductCartStyle";
+import { useLocation, Link } from "react-router-dom";
 
-const ProductCart = props => {
+const ProductCart = (props) => {
   const classes = ProductCartStyle();
 
   //State to listen to the event on the product card On the HomePage
@@ -17,7 +17,7 @@ const ProductCart = props => {
   return (
     <div className={classes.root}>
       <Typography className={classes.divTitle}>NEW ARRIVALS</Typography>
-      <GridList cellHeight={200} spacing={0} className={classes.gridList} >
+      <GridList cellHeight={200} spacing={0} className={classes.gridList}>
         {props.Data.map((product, i) => (
           // <Link to="/shop" className={classes.sigleProductDis} >
           <GridListTile
@@ -25,9 +25,13 @@ const ProductCart = props => {
             onMouseOver={onCartHover}
             onMouseLeave={HandleCartOnMouseLeave}
           >
-            <Link to="/shop"  >
-            <img src={product.img} alt={product.title} className={classes.sigleProductDis}/>
-               </Link>
+            <Link to="/singleproductpage">
+              <img
+                src={product.img}
+                alt={product.title}
+                className={classes.sigleProductDis}
+              />
+            </Link>
             <img src={product.img} alt={product.title} />
             <div className={addToCartHover}>
               <button
@@ -39,8 +43,7 @@ const ProductCart = props => {
               </button>
             </div>
           </GridListTile>
-        // </Link>
-          
+          // </Link>
         ))}
       </GridList>
     </div>

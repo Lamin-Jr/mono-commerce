@@ -1,13 +1,14 @@
-import clsx from 'clsx';
+import React from "react";
+import clsx from "clsx";
 import {
   Input,
   InputLabel,
   InputAdornment,
   FormControl,
-} from '@material-ui/core/';
+} from "@material-ui/core/";
 
 //Style Import
-import SignUpCardStyle from '../../Styles/SignUpCardStyle';
+import SignUpCardStyle from "../../Styles/SignUpCardStyle";
 
 export default function InputAdornments() {
   const classes = SignUpCardStyle();

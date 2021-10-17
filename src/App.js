@@ -9,6 +9,7 @@ import Footers from './Components/Assets/FooterAssets/Footers';
 import Home from './Components/Pages/Home';
 import Bag from './Components/Pages/Bag';
 import Shop from './Components/Pages/Shop.js'
+import SingleProductPage from './Components/Pages/SingleProjectPage';
 
 //Product Data Import
 import ProductAPI from './Components/Data/ProductData.json';
@@ -40,28 +41,31 @@ export default function App() {
 
   return (
     <div>
-    <Router>
-      <Navigation BagItem={AddToBag.length} />
-      <div>
-        <Switch>
-          <Route exact path="/">
-            <Home AddToCart={AddToBagFunction} ProductsData={ProductAPI} />
-          </Route>
-          <Route path="/bag">
-            <Bag
-              AddToBagData={AddToBag}
-              onRemoveFromBag={removeFromBag}
-              BagLenght={AddToBag.length}
-              Total={AddToBag}
-            />
-          </Route>
-          <Route> 
-          <Shop />
-          </Route>
-        </Switch>
-      </div>
-      <Footers />
-    </Router></div>
-    
+      <Router>
+        <Navigation BagItem={AddToBag.length} />
+        <div>
+          <Switch>
+            <Route exact path="/">
+              <Home AddToCart={AddToBagFunction} ProductsData={ProductAPI} />
+            </Route>
+            <Route path="/bag">
+              <Bag
+                AddToBagData={AddToBag}
+                onRemoveFromBag={removeFromBag}
+                BagLenght={AddToBag.length}
+                Total={AddToBag}
+              />
+            </Route>
+            <Route>
+              <Shop />
+            </Route>
+            <Route path="/singleproductpage">
+              <SingleProductPage />
+            </Route>
+          </Switch>
+        </div>
+        <Footers />
+      </Router>
+    </div>
   );
 }
